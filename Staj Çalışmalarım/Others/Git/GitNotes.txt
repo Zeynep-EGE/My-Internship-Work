@@ -1,0 +1,116 @@
+------------------------------------------------------ Git Nedir ve Temel Git Komutları Nelerdir ------------------------------------------
+
+Git versiyon kontrol sistemi demektir peki nedir bu versiyon kontrol sistemi?
+
+Git bir proje üzerinde yaptığımız değişiklikleri adım adım kaydeden ve bunu repository de saklamamızı ve yönetmemizi sağlayan bir sistemdir
+ve bir proje üzerinde b,rden fazla kişi ile çalışıldığında  değişiklikleri ve yeni eklentileri veya çıkartılması gerekenler gibi şeylerin
+sorun çıkarılmadan kontrol edilmesine ve projenin güncel versiyonuna ulaşabilmemize olanak sağlayan bir sistemdir
+
+Git hakkında ufak tefek bilgiler =
+
+        -Git'in takip ettiği dosyalara tracked denir
+        -Git'in kontrolünde olmayan dosyalara ise untracked dosyalar denir
+
+        -Dosya ekleme = add komutu ile olur
+        -Dosyaları klasörler arası taşıma = mv komutu ile olur
+        -Dosyaları silme = rm komutu ile olur
+
+        -Git'in umursamaması gerekn dosyalar .gitignore dosyasına yazılır
+        
+        -dosları add komutu ile sahnelenmeye hazır gruba (staged) ekleriz
+        
+        -tıpkı github repository sine dosya eklerken yaptığımız gibi burdada bir commit ile açıklama yazısı eklemeliyiz
+
+        -stash adlı bir komut ile bu dosyalar sonradan bulunabilir hale gelir
+        -clean ile silinir
+        -klasörlerdeki metinler grep komutu ve özelliği ile aratılabilir
+
+
+Staging Area yanı hazırlık alanı hakkında =
+
+    hazırlık alanı yaptığımız değişiklikleri tamamen kaydetmeden önce verileri tuttuğumuz alandır ve Git'in işleyiş temellerine uygun
+    olarak oldukça kullanışlıdır
+
+    Git işleyişi temelde şöyledir:
+
+    1-Çalışma dizinimizdeki dosyalar üzerinde değişiklik yaparız.
+    2-Dosyaların bellek kopyalarını hazırlık alanına (staging area) ekleyerek hazırlarız.
+    3-Dosyaların hazırlık alanındaki hallerini alıp oradaki bellek kopyasını kalıcı olarak Git klasörüne depolayan bir kayıt işlemi yaparız.
+
+
+
+
+------------------------------------------------------------- Temel Git Terimleri -----------------------------------------------------
+
+    -Repository proje dosyalarının uzzak bir sunucuda depolanmasını sağlayan depodur ve kısaltmasıda Repo dur 
+    
+    -Branch kodumuzda değişiklik yapmak istiyoruz ama yaptığımız bu değişiklikler ana kodu mahvedebilir veya istediğimiz gibi olmayabilir
+    o yüzden bu değişikliği ana koda eklemeden önce ben bu kodun birebir bir kopyasını oluşturayımda bu yapacağım değişikliği o klon yani
+    kopya dosyada yapayım. bu sayede ana koduma birşey olmaz ve yaptığım değişikliğin koda neler yaptığını görebilirm. yani kısacası bir
+    ilaç ürettin ama bir insan üzerindeki etkisini merak ediyorsun ama kişiyi öldürme ihtimali var o yüzden ilacı ilk hayvan üzerinde test
+    ediyorsun gibi
+
+    -Master bir reponun ana klonu yani ana Branch idir Git üzerinde hiç bir işlem yapmazsak değişikler master branchi üzerinden devam eder.
+
+    -Commit Proje dosyalarınızda belli bir değişiklik yaptığınızda o değişikliğin anlık görüntüsünün alınıp kaydedilmesine denir
+    -Checkout Mevcut branch üzerindeki commit’lerin üzerinde geçiş yapabilmemizi sağlar.
+    -Fork Repository’nin bir kopyasının alınmasıdır. asıl kullanım amacı alınan bu kopya üzerinde değişiklikler yaptıktan sonra projenin
+    ana reposuna gönderilerek projenin gelişmesine katkı sağlamaktır
+    -Pull Request (PR): Fork edilen proje üzerinde değişiklikler yaptıktan sonra gerçek repository’e gönderilerek o projenin sahibi olan
+    geliştiricinin değerlendirmesine sunmaktır. Eğer PR kabul edilirse ana repository üzerinde, fork ettiğiniz proje üzerinde
+    değişiklikler işlenir
+    -Merge Branch üzerinde yaptığımız değişiklikleri master branch’i üzerinde birleştirme işlemidir.
+
+
+------------------------------------------------------- Temel Git Komutları ---------------------------------------------------------
+
+
+Komutlarrrr =   
+
+    -git config : Kullanıcı adı, mail gibi ayarların belirleneceği komuttur
+        git config --global user.name “Zeynep Ege Karacabey"
+
+    -git init : Bu komut ile proje dizininizde GIT dizinini oluşturur. Bu dizinde projenizin repo adresi, projenin akışı, bilgileri gibi veriler bulunur.
+        git init [repository adı ve repo bağlantısı / uzantısı]
+
+    -git add : Repoya bir dosya eklemek için kullanılır.
+        $ git add <dosya veya dizin adı>
+        # Tüm dosyaları eklemek için:
+        $ git add .
+
+        # Belirli bir dosyayı eklemek için: 
+        $ git add index.html
+
+        # Tüm dizini göstermek için: 
+        $ git add css
+
+    -git rm : git add komutunun tersi olarak belirtiğiniz dosya veya dosyaları çalışma dizininden siler
+
+
+    -git commit : Bu komut ile projede yaptığımız değişiklikleri local bir repoya kaydederiz.
+        # Yaptığımız değişiklikleri sonradan bulmak için mesaj ekleyebiliriz
+        $  git commit -m “İlk commit mesajım”
+
+    -git status : Bize yol gösterici komuttur son durumu ve olası yapılması gerekenleri bize gösterir.
+
+
+    -git remote
+    -git push
+    -git pull
+    -
+
+
+
+
+
+
+
+
+
+zeynepegekaracabey
+kpYPUXJNtWEO5tma
+
+mongodb+srv://zeynepegekaracabey:kpYPUXJNtWEO5tma@cluster0.qym4npf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+

@@ -1,0 +1,2 @@
+
+Tailwind = bizlere css kodlarımızı html elementlerine önceden tanımlı klaslar şeklinde tanımlamamızı sağlar
