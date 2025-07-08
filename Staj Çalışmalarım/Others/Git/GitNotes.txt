@@ -97,7 +97,119 @@ Komutlarrrr =
     -git remote
     -git push
     -git pull
-    -
+    
+    -git clone : Uzak bir Git deposunu yerel bir kopyasını oluşturmak için kullanılır.
+        git clone https://github.com/user/repo.git
+
+    -Git Depo Oluşturma (init) :  projenizin dosyalarını ve Git tarafından takip edilen tüm değişiklikleri içeren bir depodur
+    ve bu depoyu oluşturmak için bu komut kullanılır 
+        git init
+
+    -Değişiklikleri İzleme (add) :  projenizde yapılan değişiklikleri izlemenize olanak tanır. Değişiklikleri izlemek için dosyaları
+    “staging area” olarak adlandırılan bir ara depoya eklemeniz gerekmektedir. Aşağıdaki komutla dosyaları staging area’ya ekleyebilirsiniz  
+        git add dosya_adı
+    bütün değişikliklerin hepsini kaydetmek için ise 
+        git add . //nokta ile olur
+    
+    -Yeni Bir Sürüm Oluşturma (commit) :projenizdeki dosyaların farklı sürümlerini kaydetmenizi sağlar
+        git commit -m "Sürüm açıklaması"
+
+    - Geçmişe Göz Atma (log) : projenizdeki geçmişteki sürümlere kolayca erişmenizi sağlar
+        git log
+    Bu komut, projenizin geçmişindeki sürümleri ve ilgili bilgileri listeleyecektir. Sürüm kimlikleri, tarihler, yazarlar ve
+    sürüm açıklamaları gibi bilgileri görebilirsiniz.
+
+    -Uzak Sunucuya Yükleme ve İndirme (push & pull): projenizi uzak bir sunucuya yüklemenize (push) ve indirmenize (pull) olanak tanır
+        git push uzak_sunucu_branch
+    projenizin sürümünü belirtilen uzak sunucudaki belirli bir branch’a yükler
+        git pull uzak_sunucu_branch
+
+    -Dal Oluşturma, Geçiş Yapma ve Birleştirme (branch) : projenizde farklı geliştirme yollarını ayrı dallarda (branch) yönetmenizi sağlar
+         git branch yeni_dal
+        Bu komut, mevcut projenin bir kopyasını oluşturur ve yeni dalda (branch) çalışmanıza olanak tanır
+            git branch -b yeni_dal
+        Bu komut, mevcut projenizin bir kopyasını oluşturur ve oluşturduğunuz yeni dala (branch) tüm değişiklikleriniz ile birlikte geçiş
+        yapmanızı sağlar
+            git merge dal_adi
+        Bu komut, belirttiğiniz dalı (branch) mevcut dala birleştirir
+    
+    -git diff : Dosyalar, dallar veya commitler arasındaki değişiklikleri göstermek için kullanılır.
+        git diff dal_adi diger_dal_adi
+
+    -git status : Çalışma alanındaki dosya durumunu gösterir
+        git status
+
+    -git reset : Belirli bir commit veya duruma geri dönmek için kullanılır
+         git reset --hard HEAD~1
+
+    -git rm : Depodan bir dosyayı veya klasörü silmek için kullanılır.
+        git rm file.txt
+
+    -git show :Belirli bir commit’in ayrıntılarını ve değişikliklerini gösterir.
+        git show commit_sha
+
+    -git tag : Bir etiket oluşturmak veya mevcut etiketleri listelemek için kullanılır
+        git tag v1.0.0
+
+    -git branch -d [branch name] : Bir branch’ı silmek için kullanılır.
+        git branch -d dal_adi
+
+    -git checkout : Branch geçişleri yapmak, commit veya tag’lara geçmek, dosya geri yüklemek veya geçici durum değişiklikleri yapmak için kullanılır
+        git checkout main
+        git checkout commit_sha
+        git checkout -- file.txt    
+
+    -Stash Komutu : çalıştığınız değişiklikleri geçici olarak kaydetmenizi sağlayan bir komuttur. Çalışırken beklenmedik bir değişiklikle
+    karşılaşırsanız veya geçici olarak başka bir iş üzerinde çalışmanız gerekiyorsa, stash kullanarak mevcut değişiklikleri kaydedebilir
+    ve daha sonra geri alabilirsiniz
+        git stash            # Değişiklikleri kaydet
+        git stash list       # Kaydedilen değişiklikleri listele
+        git stash apply      # Son kaydedilen değişiklikleri uygula
+
+    -Revert Komutu : belirli bir commit’in yapılan değişikliklerini geri almak için kullanılan bir komuttur. Revert komutu, geri alma
+    işlemini yeni bir commit olarak kaydeder ve mevcut tarihçeyi bozmaz
+        git revert <commit_sha>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
