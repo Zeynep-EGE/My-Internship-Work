@@ -1,0 +1,41 @@
+
+.tsx yani typeScript neden kullanırız ve nedir ve niye vardır
+    -cevabımız ise typsript sayesinde sanki javascript dosyası içerisinde html dosyasıymış gibi kod yazmamıza olanak sağlar
+    aslında bu dediğimi yapmamızı sağlayan şey .jsx dir ama .tsx jsx verileri okuyabiliyor o yüzden tam anlamıyla bir kazan
+    kazan durumu
+    
+    -ayrıca typeScript yani .tsx in hata yakalama özelliği sayesinde bir hata yaptığında veya hatalı yazdığında düzeltmen epey çabuk
+    ve kolay oluyor
+
+    Yani kısacası .tsx dosyası, HTML gibi görünür ama JavaScript gibi çalışır.
+    JavaScript’ten daha güvenlidir çünkü TypeScript kullanır.
+    Büyük projelerde karmaşa olmaması için her şey .tsx bileşenlerine bölünür
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

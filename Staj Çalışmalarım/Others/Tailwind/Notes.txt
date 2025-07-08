@@ -1,2 +1,10 @@
 
 Tailwind = bizlere css kodlarımızı html elementlerine önceden tanımlı klaslar şeklinde tanımlamamızı sağlar
+-bir noktada aslında bootstrap gibi css kodlarımı daha hızlı ve koaly bir şekilde kullanmamızı sağlar ama 
+bootstrap in tek tipliğinden farklı olarak bize ürünü hazır bir şekilde vermez bunun yerine ürünü daha esnek ve bireysel
+bir şekilde dekore etmemizi sağlar
+
+TailwindCSS yi özel olarak daha detaylıca araştır
+Tailwind varsayılan değerlerini detaylıca incele
+
+Tailwind in json dosyasını daha detaylıca karıştır
