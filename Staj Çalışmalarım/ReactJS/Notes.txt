@@ -1,0 +1,89 @@
+--------------------------------------------------- REACT HAKKINDA HERŞEY VE DAHA FAZLASI ---------------------------------------------
+
+React, kullanıcı arayüzü (UI) oluşturmak için kullanılan bir JavaScript kütüphanesi. Facebook tarafından geliştirildi ve özellikle
+dinamik, hızlı ve bileşen tabanlı web uygulamaları yapmak için popülerdir.
+
+JavaScriptden farkı ise aslında tek farkı değil ama bence en büyük farkı şudur :
+    -HTML’e benzeyen bir sözdizimiyle JavaScript yazıyorsun.
+    Mesela <div>Hello World</div> yazarken aslında JavaScript çalıştırıyorsun
+
+diğer farklarına geçicek olursak aslında benim küçümsediğimden daha önemli diğer farkları :
+    -büyük projelerde kodların yüksek miktarda karışma ihtimali vardır ve bu da kod yönetimini oldukça zorlaştırır. React JavaScript’i
+    kullanır ama işleri kolaylaştırmak için bileşen tabanlı bir yapı sunar. Sayfanı küçük, yeniden kullanılabilir parçalara (component)
+    bölersin. Mesela bir buton, bir form ya da bir navbar birer component olabilir. React, DOM’u daha verimli güncellemek için Virtual
+    DOM kullanır, bu da performansı artırır. ve genel olarak kodların karışma ihtimalini azaltır ve kod yönetimini kolaylaştırı
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
